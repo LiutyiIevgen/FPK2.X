@@ -50,6 +50,8 @@ Archive member included because of file (symbol)
 
 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1Initialize.o)
                               build/default/production/Can.o (_CAN1Initialize)
+c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1IsTXReady.o)
+                              build/default/production/Can.o (_CAN1IsTXReady)
 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1ReceiveMessage.o)
                               build/default/production/Can.o (_CAN1ReceiveMessage)
 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SendMessage.o)
@@ -84,11 +86,11 @@ Program Memory  [Origin = 0x100, Length = 0x17efe]
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x100               0x272           0x3ab  (939)
-.text                        0x372               0x3b8           0x594  (1428)
-.dinit                       0x72a                 0xc            0x12  (18)
+.text                        0x100               0x294           0x3de  (990)
+.text                        0x394               0x3c6           0x5a9  (1449)
+.dinit                       0x75a                 0xc            0x12  (18)
 
-                     Total program memory used (bytes):          0x951  (2385) 1%
+                     Total program memory used (bytes):          0x999  (2457) 1%
 
 
 Data Memory  [Origin = 0x800, Length = 0x2000]
@@ -124,69 +126,71 @@ External Symbols in Program Memory (by address):
 
                   0x000100                  __resetPRI
                   0x000126                  __psv_init
-                  0x000136                  __data_init
                   0x000136                  __data_init_standard
+                  0x000136                  __data_init
                   0x000194                  __DefaultInterrupt
                   0x000198                  _CAN1Initialize
-                  0x00019e                  _CAN1ReceiveMessage
-                  0x0001bc                  _CAN1SendMessage
-                  0x00024c                  _CAN1SetFilter
-                  0x0002a2                  _CAN1SetMask
-                  0x0002be                  _CAN1SetOperationMode
-                  0x0002c2                  _CAN1SetRXMode
-                  0x0002d2                  _CAN1SetTXMode
-                  0x0002e8                  _ConfigIntCAN1
-                  0x000310                  ___divsi3
-                  0x00032e                  ___modsi3
-                  0x00034c                  ___udivsi3
-                  0x00036c                  ___umodsi3
-                  0x000372                  _delay
-                  0x00039a                  _LongToString
-                  0x000452                  _LongToCharArray
-                  0x000488                  _StartTimer1
-                  0x0004ae                  _StartTimer4
-                  0x0004d4                  _main
-                  0x0004ee                  __T1Interrupt
-                  0x000502                  __T4Interrupt
-                  0x000516                  __C1Interrupt
-                  0x000560                  _TurnOnOrOffRelay
-                  0x000668                  _Can1Initialization
-                  0x0006e6                  _Can1SendData
-                  0x000718                  _Can1ReceiveData
+                  0x00019e                  _CAN1IsTXReady
+                  0x0001c0                  _CAN1ReceiveMessage
+                  0x0001de                  _CAN1SendMessage
+                  0x00026e                  _CAN1SetFilter
+                  0x0002c4                  _CAN1SetMask
+                  0x0002e0                  _CAN1SetOperationMode
+                  0x0002e4                  _CAN1SetRXMode
+                  0x0002f4                  _CAN1SetTXMode
+                  0x00030a                  _ConfigIntCAN1
+                  0x000332                  ___divsi3
+                  0x000350                  ___modsi3
+                  0x00036e                  ___udivsi3
+                  0x00038e                  ___umodsi3
+                  0x000394                  _delay
+                  0x0003bc                  _LongToString
+                  0x000474                  _LongToCharArray
+                  0x0004aa                  _StartTimer1
+                  0x0004d0                  _StartTimer4
+                  0x0004f6                  _main
+                  0x000510                  __T1Interrupt
+                  0x000524                  __T4Interrupt
+                  0x000538                  __C1Interrupt
+                  0x000582                  _TurnOnOrOffRelay
+                  0x00068a                  _Can1Initialization
+                  0x000708                  _Can1SendData
+                  0x000748                  _Can1ReceiveData
 
 External Symbols in Program Memory (by name):
 
                   0x000198                  _CAN1Initialize
-                  0x00019e                  _CAN1ReceiveMessage
-                  0x0001bc                  _CAN1SendMessage
-                  0x00024c                  _CAN1SetFilter
-                  0x0002a2                  _CAN1SetMask
-                  0x0002be                  _CAN1SetOperationMode
-                  0x0002c2                  _CAN1SetRXMode
-                  0x0002d2                  _CAN1SetTXMode
-                  0x000668                  _Can1Initialization
-                  0x000718                  _Can1ReceiveData
-                  0x0006e6                  _Can1SendData
-                  0x0002e8                  _ConfigIntCAN1
-                  0x000452                  _LongToCharArray
-                  0x00039a                  _LongToString
-                  0x000488                  _StartTimer1
-                  0x0004ae                  _StartTimer4
-                  0x000560                  _TurnOnOrOffRelay
-                  0x000516                  __C1Interrupt
+                  0x00019e                  _CAN1IsTXReady
+                  0x0001c0                  _CAN1ReceiveMessage
+                  0x0001de                  _CAN1SendMessage
+                  0x00026e                  _CAN1SetFilter
+                  0x0002c4                  _CAN1SetMask
+                  0x0002e0                  _CAN1SetOperationMode
+                  0x0002e4                  _CAN1SetRXMode
+                  0x0002f4                  _CAN1SetTXMode
+                  0x00068a                  _Can1Initialization
+                  0x000748                  _Can1ReceiveData
+                  0x000708                  _Can1SendData
+                  0x00030a                  _ConfigIntCAN1
+                  0x000474                  _LongToCharArray
+                  0x0003bc                  _LongToString
+                  0x0004aa                  _StartTimer1
+                  0x0004d0                  _StartTimer4
+                  0x000582                  _TurnOnOrOffRelay
+                  0x000538                  __C1Interrupt
                   0x000194                  __DefaultInterrupt
-                  0x0004ee                  __T1Interrupt
-                  0x000502                  __T4Interrupt
-                  0x000310                  ___divsi3
-                  0x00032e                  ___modsi3
-                  0x00034c                  ___udivsi3
-                  0x00036c                  ___umodsi3
+                  0x000510                  __T1Interrupt
+                  0x000524                  __T4Interrupt
+                  0x000332                  ___divsi3
+                  0x000350                  ___modsi3
+                  0x00036e                  ___udivsi3
+                  0x00038e                  ___umodsi3
                   0x000136                  __data_init
                   0x000136                  __data_init_standard
                   0x000126                  __psv_init
                   0x000100                  __resetPRI
-                  0x000372                  _delay
-                  0x0004d4                  _main
+                  0x000394                  _delay
+                  0x0004f6                  _main
 
 Memory Configuration
 
@@ -243,7 +247,7 @@ LOAD c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F601
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x000100        0x272
+.text             0x000100        0x294
  *(.init)
  .init            0x000100         0x36 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
                   0x000100                  __resetPRI
@@ -263,30 +267,32 @@ LOAD c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F601
  *(.lib*)
  .libperi         0x000198          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1Initialize.o)
                   0x000198                  _CAN1Initialize
- .libperi         0x00019e         0x1e c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1ReceiveMessage.o)
-                  0x00019e                  _CAN1ReceiveMessage
- .libperi         0x0001bc         0x90 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SendMessage.o)
-                  0x0001bc                  _CAN1SendMessage
- .libperi         0x00024c         0x56 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetFilter.o)
-                  0x00024c                  _CAN1SetFilter
- .libperi         0x0002a2         0x1c c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetMask.o)
-                  0x0002a2                  _CAN1SetMask
- .libperi         0x0002be          0x4 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetOperationMode.o)
-                  0x0002be                  _CAN1SetOperationMode
- .libperi         0x0002c2         0x10 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetRXMode.o)
-                  0x0002c2                  _CAN1SetRXMode
- .libperi         0x0002d2         0x16 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetTXMode.o)
-                  0x0002d2                  _CAN1SetTXMode
- .libperi         0x0002e8         0x28 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(ConfigIntCAN1.o)
-                  0x0002e8                  _ConfigIntCAN1
- .libm.divsi3     0x000310         0x1e c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(divsi3.eo)
-                  0x000310                  ___divsi3
- .libm.modsi3     0x00032e         0x1e c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(modsi3.eo)
-                  0x00032e                  ___modsi3
- .libm.udivsi3    0x00034c         0x20 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
-                  0x00034c                  ___udivsi3
- .libm.umodsi3    0x00036c          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
-                  0x00036c                  ___umodsi3
+ .libperi         0x00019e         0x22 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1IsTXReady.o)
+                  0x00019e                  _CAN1IsTXReady
+ .libperi         0x0001c0         0x1e c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1ReceiveMessage.o)
+                  0x0001c0                  _CAN1ReceiveMessage
+ .libperi         0x0001de         0x90 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SendMessage.o)
+                  0x0001de                  _CAN1SendMessage
+ .libperi         0x00026e         0x56 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetFilter.o)
+                  0x00026e                  _CAN1SetFilter
+ .libperi         0x0002c4         0x1c c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetMask.o)
+                  0x0002c4                  _CAN1SetMask
+ .libperi         0x0002e0          0x4 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetOperationMode.o)
+                  0x0002e0                  _CAN1SetOperationMode
+ .libperi         0x0002e4         0x10 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetRXMode.o)
+                  0x0002e4                  _CAN1SetRXMode
+ .libperi         0x0002f4         0x16 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetTXMode.o)
+                  0x0002f4                  _CAN1SetTXMode
+ .libperi         0x00030a         0x28 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(ConfigIntCAN1.o)
+                  0x00030a                  _ConfigIntCAN1
+ .libm.divsi3     0x000332         0x1e c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+                  0x000332                  ___divsi3
+ .libm.modsi3     0x000350         0x1e c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(modsi3.eo)
+                  0x000350                  ___modsi3
+ .libm.udivsi3    0x00036e         0x20 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+                  0x00036e                  ___udivsi3
+ .libm.umodsi3    0x00038e          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+                  0x00038e                  ___umodsi3
 
 usercode
  *(usercode)
@@ -346,11 +352,11 @@ userdata
  .debug_abbrev    0x0000e1         0x8e build/default/production/PathComands.o
  .debug_abbrev    0x00016f        0x145 build/default/production/main.o
 
-.debug_line       0x000000        0x5f1
+.debug_line       0x000000        0x5f9
  *(.debug_line)
- .debug_line      0x000000        0x169 build/default/production/Can.o
- .debug_line      0x000169        0x12d build/default/production/PathComands.o
- .debug_line      0x000296        0x35b build/default/production/main.o
+ .debug_line      0x000000        0x171 build/default/production/Can.o
+ .debug_line      0x000171        0x12d build/default/production/PathComands.o
+ .debug_line      0x00029e        0x35b build/default/production/main.o
 
 .debug_frame      0x000000        0x10c
  *(.debug_frame)
@@ -404,7 +410,7 @@ userdata
                   0x000014          0x4 LONG 0x194 DEFINED (__INT0Interrupt)?ABSOLUTE (__INT0Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000016          0x4 LONG 0x194 DEFINED (__IC1Interrupt)?ABSOLUTE (__IC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000018          0x4 LONG 0x194 DEFINED (__OC1Interrupt)?ABSOLUTE (__OC1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00001a          0x4 LONG 0x4ee DEFINED (__T1Interrupt)?ABSOLUTE (__T1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00001a          0x4 LONG 0x510 DEFINED (__T1Interrupt)?ABSOLUTE (__T1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00001c          0x4 LONG 0x194 DEFINED (__IC2Interrupt)?ABSOLUTE (__IC2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00001e          0x4 LONG 0x194 DEFINED (__OC2Interrupt)?ABSOLUTE (__OC2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000020          0x4 LONG 0x194 DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -422,13 +428,13 @@ userdata
                   0x000038          0x4 LONG 0x194 DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003a          0x4 LONG 0x194 DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003c          0x4 LONG 0x194 DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00003e          0x4 LONG 0x502 DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00003e          0x4 LONG 0x524 DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000040          0x4 LONG 0x194 DEFINED (__T5Interrupt)?ABSOLUTE (__T5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000042          0x4 LONG 0x194 DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000044          0x4 LONG 0x194 DEFINED (__U2RXInterrupt)?ABSOLUTE (__U2RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000046          0x4 LONG 0x194 DEFINED (__U2TXInterrupt)?ABSOLUTE (__U2TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000048          0x4 LONG 0x194 DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00004a          0x4 LONG 0x516 DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00004a          0x4 LONG 0x538 DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00004c          0x4 LONG 0x194 DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00004e          0x4 LONG 0x194 DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000050          0x4 LONG 0x194 DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -468,7 +474,7 @@ userdata
                   0x000094          0x4 LONG 0x194 DEFINED (__AltINT0Interrupt)?ABSOLUTE (__AltINT0Interrupt):DEFINED (__INT0Interrupt)?ABSOLUTE (__INT0Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000096          0x4 LONG 0x194 DEFINED (__AltIC1Interrupt)?ABSOLUTE (__AltIC1Interrupt):DEFINED (__IC1Interrupt)?ABSOLUTE (__IC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000098          0x4 LONG 0x194 DEFINED (__AltOC1Interrupt)?ABSOLUTE (__AltOC1Interrupt):DEFINED (__OC1Interrupt)?ABSOLUTE (__OC1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00009a          0x4 LONG 0x4ee DEFINED (__AltT1Interrupt)?ABSOLUTE (__AltT1Interrupt):DEFINED (__T1Interrupt)?ABSOLUTE (__T1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00009a          0x4 LONG 0x510 DEFINED (__AltT1Interrupt)?ABSOLUTE (__AltT1Interrupt):DEFINED (__T1Interrupt)?ABSOLUTE (__T1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00009c          0x4 LONG 0x194 DEFINED (__AltIC2Interrupt)?ABSOLUTE (__AltIC2Interrupt):DEFINED (__IC2Interrupt)?ABSOLUTE (__IC2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00009e          0x4 LONG 0x194 DEFINED (__AltOC2Interrupt)?ABSOLUTE (__AltOC2Interrupt):DEFINED (__OC2Interrupt)?ABSOLUTE (__OC2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000a0          0x4 LONG 0x194 DEFINED (__AltT2Interrupt)?ABSOLUTE (__AltT2Interrupt):DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -486,13 +492,13 @@ userdata
                   0x0000b8          0x4 LONG 0x194 DEFINED (__AltIC8Interrupt)?ABSOLUTE (__AltIC8Interrupt):DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000ba          0x4 LONG 0x194 DEFINED (__AltOC3Interrupt)?ABSOLUTE (__AltOC3Interrupt):DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000bc          0x4 LONG 0x194 DEFINED (__AltOC4Interrupt)?ABSOLUTE (__AltOC4Interrupt):DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000be          0x4 LONG 0x502 DEFINED (__AltT4Interrupt)?ABSOLUTE (__AltT4Interrupt):DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000be          0x4 LONG 0x524 DEFINED (__AltT4Interrupt)?ABSOLUTE (__AltT4Interrupt):DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c0          0x4 LONG 0x194 DEFINED (__AltT5Interrupt)?ABSOLUTE (__AltT5Interrupt):DEFINED (__T5Interrupt)?ABSOLUTE (__T5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c2          0x4 LONG 0x194 DEFINED (__AltINT2Interrupt)?ABSOLUTE (__AltINT2Interrupt):DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c4          0x4 LONG 0x194 DEFINED (__AltU2RXInterrupt)?ABSOLUTE (__AltU2RXInterrupt):DEFINED (__U2RXInterrupt)?ABSOLUTE (__U2RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c6          0x4 LONG 0x194 DEFINED (__AltU2TXInterrupt)?ABSOLUTE (__AltU2TXInterrupt):DEFINED (__U2TXInterrupt)?ABSOLUTE (__U2TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c8          0x4 LONG 0x194 DEFINED (__AltSPI2Interrupt)?ABSOLUTE (__AltSPI2Interrupt):DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000ca          0x4 LONG 0x516 DEFINED (__AltC1Interrupt)?ABSOLUTE (__AltC1Interrupt):DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000ca          0x4 LONG 0x538 DEFINED (__AltC1Interrupt)?ABSOLUTE (__AltC1Interrupt):DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000cc          0x4 LONG 0x194 DEFINED (__AltIC3Interrupt)?ABSOLUTE (__AltIC3Interrupt):DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000ce          0x4 LONG 0x194 DEFINED (__AltIC4Interrupt)?ABSOLUTE (__AltIC4Interrupt):DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000d0          0x4 LONG 0x194 DEFINED (__AltIC5Interrupt)?ABSOLUTE (__AltIC5Interrupt):DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -1537,7 +1543,7 @@ LOAD data_init
                   0x0000c9        0x18a build/default/production/main.o
 
 __c30_signature
-                  0x000254         0x6c
+                  0x000254         0x72
  __c30_signature
                   0x000254          0x6 build/default/production/Can.o
  __c30_signature
@@ -1547,33 +1553,35 @@ __c30_signature
  __c30_signature
                   0x000266          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1Initialize.o)
  __c30_signature
-                  0x00026c          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1ReceiveMessage.o)
+                  0x00026c          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1IsTXReady.o)
  __c30_signature
-                  0x000272          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SendMessage.o)
+                  0x000272          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1ReceiveMessage.o)
  __c30_signature
-                  0x000278          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetFilter.o)
+                  0x000278          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SendMessage.o)
  __c30_signature
-                  0x00027e          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetMask.o)
+                  0x00027e          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetFilter.o)
  __c30_signature
-                  0x000284          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetOperationMode.o)
+                  0x000284          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetMask.o)
  __c30_signature
-                  0x00028a          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetRXMode.o)
+                  0x00028a          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetOperationMode.o)
  __c30_signature
-                  0x000290          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetTXMode.o)
+                  0x000290          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetRXMode.o)
  __c30_signature
-                  0x000296          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(ConfigIntCAN1.o)
+                  0x000296          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(CAN1SetTXMode.o)
  __c30_signature
-                  0x00029c          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+                  0x00029c          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib/dsPIC30F\libp30F6012A-elf.a(ConfigIntCAN1.o)
  __c30_signature
-                  0x0002a2          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+                  0x0002a2          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x0002a8          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+                  0x0002a8          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
  __c30_signature
-                  0x0002ae          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(modsi3.eo)
+                  0x0002ae          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(divsi3.eo)
  __c30_signature
-                  0x0002b4          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+                  0x0002b4          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(modsi3.eo)
  __c30_signature
-                  0x0002ba          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+                  0x0002ba          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+ __c30_signature
+                  0x0002c0          0x6 c:/program files/microchip/xc16/v1.21/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
 
 .ndata              0x0800          0x4
  .ndata             0x0800          0x4 build/default/production/main.o
@@ -1603,23 +1611,23 @@ __c30_signature
  .config_FCKSMEN
                   0xf80000          0x2 build/default/production/main.o
 
-.text             0x000372        0x3b8
- .text            0x000372        0x1ee build/default/production/main.o
-                  0x000372                  _delay
-                  0x00039a                  _LongToString
-                  0x000452                  _LongToCharArray
-                  0x000488                  _StartTimer1
-                  0x0004ae                  _StartTimer4
-                  0x0004d4                  _main
-                  0x0004ee                  __T1Interrupt
-                  0x000502                  __T4Interrupt
-                  0x000516                  __C1Interrupt
- .text            0x000560        0x108 build/default/production/PathComands.o
-                  0x000560                  _TurnOnOrOffRelay
- .text            0x000668         0xc2 build/default/production/Can.o
-                  0x000668                  _Can1Initialization
-                  0x0006e6                  _Can1SendData
-                  0x000718                  _Can1ReceiveData
+.text             0x000394        0x3c6
+ .text            0x000394        0x1ee build/default/production/main.o
+                  0x000394                  _delay
+                  0x0003bc                  _LongToString
+                  0x000474                  _LongToCharArray
+                  0x0004aa                  _StartTimer1
+                  0x0004d0                  _StartTimer4
+                  0x0004f6                  _main
+                  0x000510                  __T1Interrupt
+                  0x000524                  __T4Interrupt
+                  0x000538                  __C1Interrupt
+ .text            0x000582        0x108 build/default/production/PathComands.o
+                  0x000582                  _TurnOnOrOffRelay
+ .text            0x00068a         0xd0 build/default/production/Can.o
+                  0x00068a                  _Can1Initialization
+                  0x000708                  _Can1SendData
+                  0x000748                  _Can1ReceiveData
 
-.dinit            0x00072a          0xc
- .dinit           0x00072a          0xc data_init
+.dinit            0x00075a          0xc
+ .dinit           0x00075a          0xc data_init
