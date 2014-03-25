@@ -1,4 +1,4 @@
-Microchip Technology Inc, vXÅ2
+Microchip Technology Inc, vƒ
 
 Tool Name:
   c:\program files\microchip\xc16\v1.21\bin\bin\..\bin/elf-ld.exe
@@ -87,10 +87,10 @@ Program Memory  [Origin = 0x100, Length = 0x17efe]
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x100               0x294           0x3de  (990)
-.text                        0x394               0x3c6           0x5a9  (1449)
-.dinit                       0x75a                 0xc            0x12  (18)
+.text                        0x394               0x466           0x699  (1689)
+.dinit                       0x7fa                 0xc            0x12  (18)
 
-                     Total program memory used (bytes):          0x999  (2457) 1%
+                     Total program memory used (bytes):          0xa89  (2697) 1%
 
 
 Data Memory  [Origin = 0x800, Length = 0x2000]
@@ -152,10 +152,10 @@ External Symbols in Program Memory (by address):
                   0x000510                  __T1Interrupt
                   0x000524                  __T4Interrupt
                   0x000538                  __C1Interrupt
-                  0x000582                  _TurnOnOrOffRelay
-                  0x00068a                  _Can1Initialization
-                  0x000708                  _Can1SendData
-                  0x000748                  _Can1ReceiveData
+                  0x000582                  _Can1Initialization
+                  0x0006a0                  _Can1SendData
+                  0x0006e0                  _Can1ReceiveData
+                  0x0006f2                  _TurnOnOrOffRelay
 
 External Symbols in Program Memory (by name):
 
@@ -168,15 +168,15 @@ External Symbols in Program Memory (by name):
                   0x0002e0                  _CAN1SetOperationMode
                   0x0002e4                  _CAN1SetRXMode
                   0x0002f4                  _CAN1SetTXMode
-                  0x00068a                  _Can1Initialization
-                  0x000748                  _Can1ReceiveData
-                  0x000708                  _Can1SendData
+                  0x000582                  _Can1Initialization
+                  0x0006e0                  _Can1ReceiveData
+                  0x0006a0                  _Can1SendData
                   0x00030a                  _ConfigIntCAN1
                   0x000474                  _LongToCharArray
                   0x0003bc                  _LongToString
                   0x0004aa                  _StartTimer1
                   0x0004d0                  _StartTimer4
-                  0x000582                  _TurnOnOrOffRelay
+                  0x0006f2                  _TurnOnOrOffRelay
                   0x000538                  __C1Interrupt
                   0x000194                  __DefaultInterrupt
                   0x000510                  __T1Interrupt
@@ -1611,7 +1611,7 @@ __c30_signature
  .config_FCKSMEN
                   0xf80000          0x2 build/default/production/main.o
 
-.text             0x000394        0x3c6
+.text             0x000394        0x466
  .text            0x000394        0x1ee build/default/production/main.o
                   0x000394                  _delay
                   0x0003bc                  _LongToString
@@ -1622,12 +1622,12 @@ __c30_signature
                   0x000510                  __T1Interrupt
                   0x000524                  __T4Interrupt
                   0x000538                  __C1Interrupt
- .text            0x000582        0x108 build/default/production/PathComands.o
-                  0x000582                  _TurnOnOrOffRelay
- .text            0x00068a         0xd0 build/default/production/Can.o
-                  0x00068a                  _Can1Initialization
-                  0x000708                  _Can1SendData
-                  0x000748                  _Can1ReceiveData
+ .text            0x000582        0x170 build/default/production/Can.o
+                  0x000582                  _Can1Initialization
+                  0x0006a0                  _Can1SendData
+                  0x0006e0                  _Can1ReceiveData
+ .text            0x0006f2        0x108 build/default/production/PathComands.o
+                  0x0006f2                  _TurnOnOrOffRelay
 
-.dinit            0x00075a          0xc
- .dinit           0x00075a          0xc data_init
+.dinit            0x0007fa          0xc
+ .dinit           0x0007fa          0xc data_init

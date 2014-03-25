@@ -77,7 +77,7 @@ int main(int argc, char** argv) {
 void __attribute__((__interrupt__, __auto_psv__)) _T1Interrupt(void)
 {
     // Clear Timer 1 interrupt flag
-    _T4IF = 0;
+    _T1IF = 0;
     
 }
 void __attribute__((__interrupt__, __auto_psv__)) _T4Interrupt(void)
