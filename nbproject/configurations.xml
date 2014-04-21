@@ -9,6 +9,7 @@
       <itemPath>PathComands.h</itemPath>
       <itemPath>Timer.h</itemPath>
       <itemPath>globals.h</itemPath>
+      <itemPath>InOutSignals.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -20,6 +21,7 @@
       <itemPath>Can.c</itemPath>
       <itemPath>PathComands.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>InOutSignals.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
